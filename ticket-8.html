@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket 8</title>
+</head>
+<body>
+    <script>
+        const user1 = { name:"Angel", age: 16};
+        const user2 = {name: "Jenny", age: 20};
+        function checkUserAge(user) {
+            if (user.age < 18) {
+                return `${user.name} is a minor.`;
+            } else {
+                return `${user.name} is an adult.`;
+            }
+        }
+        console.log(checkUserAge(user1));
+        console.log(checkUserAge(user2));
+
+    </script>
+    
+</body>
+</html>

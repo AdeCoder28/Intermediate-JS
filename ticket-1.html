@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket 1</title>
+</head>
+<body>
+    <script>
+        function isEven(num) {
+            if (num % 2 ===0){
+                return "even";
+            }
+            return "odd";
+        }
+        console.log(isEven(4));
+        console.log(isEven(7));
+        
+        function handleInput(input){
+            const numberPattern = /^[0-9]+$/;
+            if (!numberPattern.test(input)){
+                console.log("Input is not a number.");
+                
+            } else {
+                    console.log("input is a number");
+                }
+           
+        }
+        handleInput ("abc");
+        handleInput("123");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket 7</title>
+</head>
+<body>
+    <script>
+        const todos = [
+            { task: 'Buy a charger', done: false},
+            { task: 'Buy a laptop', done: true},
+            { task: 'Clean the room', done: false},
+            { task: 'Building a project', done: true },
+        ];
+        function printUndoneTasks(todos){
+            const undoneTasks = todos.filter(todo => !todo.done);
+            undoneTasks.forEach(todo => console.log(todo.task));
+        }
+       printUndoneTasks(todos);
+    </script>
+</body>
+</html>
